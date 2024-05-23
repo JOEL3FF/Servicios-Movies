@@ -1,0 +1,154 @@
+/* Tamaño por defecto pantallas (1280-1024) */
+@media all and (min-width: 1024px) and (max-width: 1480px) {
+  .Contenedor-terciario {
+    .uno {
+      display: none;
+    }
+    .none-2 {
+      display: none;
+    }
+    &__icono {
+      margin-left: 10%;
+    }
+  }
+
+  summary::after {
+    right: calc(2em + 2vw);
+  }
+  .hr {
+    width: 85vw;
+    height: 3px;
+    position: relative;
+    bottom: 2em;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1200px) {
+  .Contenedor-terciario {
+    &__icono {
+      margin-left: 11%;
+    }
+  }
+}
+
+/* Tamaño tablet horizontal (1024-768) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .div-2 {
+    width: 100%;
+  }
+
+  .Contenedor-terciario {
+    .none {
+      display: none;
+    }
+    &__icono {
+      width: 20%;
+      height: 60%;
+    }
+  }
+
+  summary::after {
+    right: 5%;
+  }
+}
+
+/* Tamaño tablet (768-480) */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .Contenedor-fantasma__padre {
+    display: none;
+  }
+
+  .Contenedor-fantasma__hamburguesa:checked ~ .Contenedor-fantasma {
+    display: none;
+  }
+
+  .Contenedor-terciario {
+    width: 100vw;
+    .none {
+      display: none;
+    }
+    .none-2 {
+      display: none;
+    }
+    &__icono {
+      width: 30%;
+      height: 60%;
+    }
+  }
+  summary::after {
+    left: 1em;
+  }
+  .Contenedor-Secundario {
+    height: max-content;
+    &__figure {
+      height: 90%;
+      width: 80%;
+    }
+    &__img {
+      height: 10em;
+      width: 20em;
+      height: 80%;
+      width: 80%;
+    }
+
+    &__figure2 {
+      top: 4em;
+      bottom: 18em;
+    }
+  }
+}
+
+/* Tamaño teléfonos (480-menos ) */
+@media all and (max-width: 480px) {
+  .Contenedor-header {
+    &__li--titulo {
+      display: none;
+    }
+  }
+
+  .Contenedor-fantasma__padre {
+    display: none;
+  }
+
+  .Contenedor-fantasma__hamburguesa:checked ~ .Contenedor-fantasma {
+    display: none;
+  }
+
+  .Contenedor-terciario {
+    .none {
+      display: none;
+    }
+    .none-2 {
+      display: none;
+    }
+    &__icono {
+      width: 25%;
+      height: 60%;
+
+      background-color: red;
+    }
+  }
+  summary::after {
+    left: 1em;
+  }
+  .Contenedor-Secundario {
+    height: 500vh;
+
+    &__figure {
+      width: 80%;
+      height: 80%;
+    }
+    &__figure2 {
+      top: 4em;
+      bottom: 18em;
+      display: flex;
+    }
+  }
+
+  .Contenedor-header__ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-right: 1.5em;
+  }
+}

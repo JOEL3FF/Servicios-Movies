@@ -1,0 +1,28 @@
+$color-text: #ffffff;
+$color-title: #ef1731;
+$color-fondo: #171a23;
+$color-fondo-dos: #a9a9aa;
+$f-s-sp: 12px;
+$f-s-p: 22px;
+$f-s-g: calc(1em + 2vw);
+$f-s-eg: calc(1em + 3vw);
+$f-s-eeg: 8vw;
+@mixin buton {
+  font-size: 26px;
+  background-color: $color-title;
+  color: $color-text;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+
+  &:hover {
+    background-color: rgb($color-title, 0.8);
+  }
+}
+
+@mixin centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+}

@@ -1,0 +1,36 @@
+@import "_custom-properties.scss";
+
+.Contenedor-header {
+  background-color: $color-fondo;
+  color: $color-text;
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2em;
+    
+  }
+  &__li {
+    font-size: $f-s-p;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.133);
+    }
+    &--titulo {
+      font-size: $f-s-g;
+    }
+    &--suscribirse {
+      @include buton;
+      font-size: $f-s-p;
+    }
+  }
+
+  
+}

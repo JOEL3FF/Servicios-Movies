@@ -1,0 +1,471 @@
+@import "_custom-properties.scss";
+
+.Contenedor-terciario {
+  height: 350vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+
+  &__img {
+    height: 38vh;
+
+    background-image: linear-gradient(
+      #000 10%,
+      rgba(214, 14, 14, 0.603) 15% 80%,
+      #000 95%
+    );
+
+    bottom: 1em;
+
+    &--2 {
+      background-color: rgb(224, 230, 224);
+
+      height: 38vh;
+      background-image: linear-gradient(
+        #000 5%,
+        rgb(224, 230, 224) 10% 86%,
+        #000 90%
+      );
+
+      bottom: 1em;
+    }
+    &--3 {
+      height: 38vh;
+      background-image: linear-gradient(
+        #000 5%,
+        rgb(106, 61, 64) 10% 86%,
+        #000 90%
+      );
+
+      bottom: 1em;
+    }
+    &--4 {
+      height: 38vh;
+      background-image: linear-gradient(
+        #000 5%,
+        rgb(61, 93, 63) 10% 86%,
+        #000 90%
+      );
+
+      bottom: 1em;
+    }
+    &--5 {
+      height: 38vh;
+      background-image: linear-gradient(
+        #000 5%,
+        rgb(57, 79, 95) 10% 86%,
+        #000 90%
+      );
+
+      bottom: 1em;
+    }
+  }
+
+  &__h2 {
+    font-size: $f-s-g;
+    color: $color-fondo-dos;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    z-index: 999;
+  }
+  &__span--uno {
+    color: rgb(255, 255, 255);
+    font-size: $f-s-eeg;
+    position: relative;
+    z-index: 9999;
+  }
+  &__span--dos {
+    color: rgb(239, 114, 239);
+    font-size: $f-s-eeg;
+    position: relative;
+    z-index: 9999;
+  }
+  &__span--tres {
+    color: rgb(38, 247, 250);
+    font-size: $f-s-eeg;
+    position: relative;
+    z-index: 9999;
+  }
+  &__span--cuatro {
+    color: rgb(228, 240, 137);
+    font-size: $f-s-eeg;
+    position: relative;
+    z-index: 9999;
+  }
+  &__span--cinco {
+    color: rgb(255, 255, 255);
+    font-size: $f-s-eeg;
+    position: relative;
+    z-index: 9999;
+  }
+  &__figcaption {
+    position: relative;
+  }
+  &__span {
+    background-color: rgba(255, 255, 255, 0.349);
+  }
+
+  &__png {
+    position: absolute;
+    right: 10vw;
+
+    z-index: 1;
+    bottom: 3em;
+    height: 18em;
+
+    &--2 {
+      position: absolute;
+      bottom: 3em;
+      right: 10vw;
+      z-index: 1;
+
+      height: 18em;
+    }
+    &--3 {
+      position: absolute;
+      right: 10vw;
+      z-index: 1;
+      bottom: 4em;
+      height: 18em;
+    }
+    &--4 {
+      position: absolute;
+      right: 10vw;
+      z-index: 1;
+      bottom: 0;
+      height: 25em;
+    }
+
+    &--5 {
+      position: absolute;
+      right: 10vw;
+      z-index: 1;
+      bottom: 0;
+      height: 20em;
+    }
+    &--6 {
+      position: absolute;
+      right: 10vw;
+      z-index: 1;
+      bottom: 0;
+      height: 24em;
+    }
+  }
+
+  &__icono {
+    background-color: rgb(0, 4, 255);
+    width: 12%;
+    height: 60%;
+    margin-top: 18em;
+    margin-left: 4%;
+    position: relative;
+    z-index: 999;
+    object-fit: fill;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+      border: 2px solid rgb(255, 255, 255);
+    }
+  }
+  &__efecto {
+    width: 12vw;
+    height: 12vh;
+    clip-path: polygon(
+      43% 35%,
+      100% 0,
+      100% 13%,
+      15% 68%,
+      13% 100%,
+      0 100%,
+      0 77%,
+      7% 54%
+    );
+
+    background-color: #000000;
+    position: absolute;
+    left: 20em;
+    top: 3em;
+    z-index: 0;
+    &--2 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        95% 10%,
+        42% 43%,
+        37% 100%,
+        15% 100%,
+        17% 38%,
+        5% 10%
+      );
+
+      background-color: #000;
+      position: absolute;
+      z-index: 0;
+      top: 8em;
+      left: 40em;
+    }
+    &--3 {
+      width: 5em;
+      height: 5em;
+      clip-path: circle(50% at 50% 50%);
+      background-color: #000;
+      position: absolute;
+      top: 3em;
+      left: 35em;
+      z-index: 0;
+    }
+    &--4 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        20% 20%,
+        80% 20%,
+        95% 40%,
+        92% 70%,
+        75% 100%,
+        25% 100%,
+        7% 70%,
+        5% 40%
+      );
+
+      background-color: #000;
+      position: absolute;
+      top: 15em;
+      left: 5em;
+      z-index: 0;
+    }
+    &--5 {
+      width: 8em;
+      height: 8em;
+      clip-path: polygon(
+        0 15%,
+        50% 70%,
+        100% 15%,
+        85% 70%,
+        70% 85%,
+        30% 85%,
+        15% 70%
+      );
+
+      background-color: #000;
+      position: absolute;
+      top: 3em;
+      left: 8em;
+      z-index: 0;
+    }
+
+    //SEGUNDO//
+
+    &--6 {
+      width: 5em;
+      height: 5em;
+      clip-path: circle(50% at 50% 50%);
+
+      background-color: #000000;
+      position: absolute;
+      top: 13em;
+      left: 20em;
+      z-index: 0;
+    }
+    &--7 {
+      width: 5em;
+      height: 5em;
+      clip-path: inset(5% 20% 15% 10%);
+
+      background-color: #000000;
+      position: absolute;
+      top: 4em;
+      left: 26em;
+      z-index: 0;
+    }
+    &--8 {
+      width: 8em;
+      height: 8em;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+      background-color: #000000;
+      position: absolute;
+      top: 3em;
+      left: 10em;
+      z-index: 0;
+    }
+
+    //TERCERO//
+    &--9 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        50% 0%,
+        80% 10%,
+        100% 35%,
+        100% 70%,
+        80% 90%,
+        50% 100%,
+        20% 90%,
+        0% 70%,
+        0 35%,
+        20% 10%
+      );
+
+      background-color: #ebe2e2;
+      position: absolute;
+      top: 14em;
+      left: 20em;
+      z-index: 0;
+    }
+    &--10 {
+      width: 5em;
+      height: 5em;
+      clip-path: circle(50% at 50% 50%);
+      clip-path: polygon(
+        50% 0%,
+        80% 10%,
+        100% 35%,
+        100% 70%,
+        80% 90%,
+        50% 100%,
+        20% 90%,
+        0% 70%,
+        0 35%,
+        20% 10%
+      );
+      background-color: #ebe2e2;
+      position: absolute;
+      top: 2em;
+      left: 15em;
+      z-index: 0;
+    }
+    &--11 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        50% 0%,
+        80% 10%,
+        100% 35%,
+        100% 70%,
+        80% 90%,
+        50% 100%,
+        20% 90%,
+        0% 70%,
+        0 35%,
+        20% 10%
+      );
+
+      background-color: #ebe2e2;
+      position: absolute;
+      top: 4em;
+      left: 35em;
+      z-index: 0;
+    }
+    &--12 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        50% 0%,
+        80% 10%,
+        100% 35%,
+        100% 70%,
+        80% 90%,
+        50% 100%,
+        20% 90%,
+        0% 70%,
+        0 35%,
+        20% 10%
+      );
+
+      background-color: #ebe2e2;
+      position: absolute;
+      top: 8em;
+      left: 6em;
+      z-index: 0;
+    }
+    //CUARTO//
+    &--13 {
+      width: 6em;
+      height: 6em;
+      clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        78% 58%,
+        100% 70%,
+        93% 100%,
+        15% 100%,
+        0% 70%,
+        22% 58%
+      );
+
+      background-color: #eff49e;
+      position: absolute;
+      top: 12em;
+      left: 26em;
+      z-index: 0;
+    }
+    &--14 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        20% 0,
+        80% 0,
+        70% 25%,
+        70% 70%,
+        70% 100%,
+        30% 100%,
+        30% 70%,
+        30% 25%
+      );
+
+      background-color: #eff49e;
+      position: absolute;
+      top: 3em;
+      left: 6em;
+      z-index: 0;
+    }
+    &--15 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        50% 0%,
+        80% 10%,
+        100% 35%,
+        100% 70%,
+        80% 90%,
+        50% 100%,
+        20% 90%,
+        0% 70%,
+        0 35%,
+        20% 10%
+      );
+
+      background-color: #eff49e;
+      position: absolute;
+      top: 12em;
+      left: 6em;
+      z-index: 0;
+    }
+    &--16 {
+      width: 5em;
+      height: 5em;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        95% 10%,
+        85% 15%,
+        85% 100%,
+        15% 100%,
+        15% 15%,
+        5% 10%
+      );
+
+      background-color: #eff49e;
+      position: absolute;
+      top: 3em;
+      left: 22em;
+      z-index: 0;
+    }
+  }
+}
